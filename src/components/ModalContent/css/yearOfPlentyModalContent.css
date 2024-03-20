@@ -1,0 +1,86 @@
+.year-of-plenty-modal-content-container {
+  /* border: 1px solid red; */
+  padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Yatra One', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.year-of-plenty-resources-container {
+  /* border: 1px solid blue; */
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.year-of-plenty-error-message{
+  color: red;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.year-of-plenty-error-message h3{
+  margin: 0;
+}
+
+.year-of-plenty-resources-container img {
+  cursor: pointer;
+}
+
+.year-of-plenty-resource-actions {
+  /* border: 1px solid yellow; */
+  width: 60px;
+  height: 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.year-of-plenty-resource-actions p{
+  margin: 0;
+}
+
+
+#reduce-yop-resource-amount-button {
+  background-color: transparent;
+  color: black;
+  width: auto;
+  margin-top: 0;
+  text-decoration: underline;
+  border: none;
+  font-family: 'Yatra One', cursive;
+}
+
+.year-of-plenty-modal-actions{
+  /* border: 1px solid orange; */
+  width: 85%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.year-of-plenty-modal-actions button{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 200px;
+  min-height: 50px;
+  font-family: 'Yatra One';
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #632828;
+}
+
+.year-of-plenty-modal-actions button:hover{
+  background-color: rgb(71, 10, 2);
+}

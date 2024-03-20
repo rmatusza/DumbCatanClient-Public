@@ -1,0 +1,110 @@
+.monopoly-modal-content-container {
+  /* border: 1px solid red; */
+  padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Yatra One', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.monopoly-resources-container {
+  /* border: 1px solid blue; */
+  width: 60%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.monopoly-error-message{
+  color: red;
+  height: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.monopoly-error-message h3{
+  margin: 0;
+}
+
+.monopoly-resources-container img {
+  cursor: pointer;
+}
+
+.monopoly-resource-actions {
+  /* border: 1px solid yellow; */
+  width: 60px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.monopoly-resource-actions p{
+  margin: 0;
+}
+
+
+#reduce-yop-resource-amount-button {
+  background-color: transparent;
+  color: black;
+  width: auto;
+  margin-top: 0;
+  text-decoration: underline;
+  border: none;
+  font-family: 'Yatra One', cursive;
+}
+
+.monopoly-result-title{
+  text-decoration: underline;
+}
+
+.monopoly-result-container{
+  /* border: 1px solid green; */
+  display: flex;
+  width: auto;
+}
+
+.monopoly-result{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.monopoly-result h4{
+  margin: 5px;
+}
+
+.monopoly-modal-actions{
+  /* border: 1px solid orange; */
+  width: 85%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.monopoly-modal-actions button{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 200px;
+  min-height: 50px;
+  font-family: 'Yatra One';
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #632828;
+}
+
+.monopoly-modal-actions button:hover{
+  background-color: rgb(71, 10, 2);
+}

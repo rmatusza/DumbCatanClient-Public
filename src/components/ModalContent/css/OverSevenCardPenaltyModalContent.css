@@ -1,0 +1,92 @@
+.modal-content-container__over-seven-card-penalty {
+  /* border: 1px solid yellow; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Yatra One', cursive;
+}
+
+.modal-title {
+  /* border: 1px solid red; */
+  width: 77%;
+  text-align: center;
+}
+
+.returned-cards-container__title h3 {
+  margin: 0;
+}
+
+.returned-cards-container {
+  border-bottom: 2px solid black;
+  display: flex;
+  /* justify-content: space-around; */
+  height: 100px;
+  width: 70%;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.returned-card-container {
+  margin-right: 30px;
+}
+
+.returned-cards-container h4 {
+  margin: 0;
+  text-align: center;
+}
+
+.card-selections__title h3 {
+  margin: 0;
+}
+
+.card-selections {
+  /* border-bottom: 2px solid black; */
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.card-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-selections h4 {
+  margin: 0;
+  text-align: center;
+}
+
+.card-selections__actions button {
+  background-color: #632828;
+  color: white;
+  margin: 5px;
+  min-width: 20px;
+  min-height: 17px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirm-returned-cards__actions{
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+}
+
+.confirm-returned-cards__actions button {
+  font: inherit;
+  font-family: 'Yatra One', cursive;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: #632828;
+
+}

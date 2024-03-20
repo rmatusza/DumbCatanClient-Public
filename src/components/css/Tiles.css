@@ -1,0 +1,71 @@
+.main {
+  display: flex;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 110px;
+  margin: 5px;
+}
+
+.wood {
+  background-image: url('../../../public/images/tiles/wood.png');
+}
+
+.brick {
+  background-image: url('../../../public/images/tiles/brick.png');
+}
+
+.stone {
+  background-image: url('../../../public/images/tiles/stone.png');
+}
+
+.hay {
+  background-image: url('../../../public/images/tiles/hay.png');
+}
+
+.desert {
+  background-color: antiquewhite;
+}
+
+.tile-row::before {
+  content: "";
+  width: calc(var(--s)/2 + var(--m));
+  float: left;
+  height: 100%;
+  shape-outside: repeating-linear-gradient(transparent 0 calc(var(--r) - 3px),
+      #fff 0 var(--r));
+}
+
+.tile-image {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  z-index: 30;
+}
+
+.value-frequency-container {
+  border: 3px solid black;
+  z-index: 100;
+  height: 55px;
+  width: 55px;
+  border-radius: 50px;
+  background-color: wheat;
+}
+
+.robber{
+  background-color: rgb(255, 122, 45);
+}
+
+.value {
+  margin: 0;
+}
+
+.frequency {
+  margin: 0;
+  color: white
+}

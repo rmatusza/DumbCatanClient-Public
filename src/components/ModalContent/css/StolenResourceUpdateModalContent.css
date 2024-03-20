@@ -1,0 +1,43 @@
+.stolen-resource-update-modal-content-container{
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 100%;
+  font-family: 'Yatra One', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stolen-resource-update-modal__actions{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 20px;
+  /* border: 1px solid blue; */
+  width: auto;
+}
+
+.stolen-resource-update-modal__actions button{
+  font: inherit;
+  font-family: 'Yatra One', cursive;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  margin: 20px;
+  height: 100%;
+  background-color: #632828;
+}
+
+.stolen-resource-update-modal__message-container{
+  /* border: 1px solid blue; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}

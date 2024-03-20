@@ -1,0 +1,42 @@
+.username-info-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.avatar-info-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.modal-username-text{
+  /* font-weight: bold; */
+  color: rgb(148, 186, 241);
+  color: white;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  /* color: rgb(94, 192, 85); */
+
+}
+
+.current-avatar-img{
+  width: 130px;
+  height: 110px
+}
+
+.view-profile-actions-container{
+  /* border: 2px solid white; */
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.user-info-container{
+  /* border: 2px solid red; */
+  margin-right: 30px;
+  margin-left: 30px;
+}

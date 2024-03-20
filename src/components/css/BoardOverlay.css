@@ -1,0 +1,3657 @@
+.background-container{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 80px;
+  left: 0;
+  /* border: 2px solid rgb(0, 255, 0); */
+}
+
+.board-overlay-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 115px;
+  width: 640px;
+  height: 750px;
+  z-index: 40;
+  margin-bottom: 20px;
+  /* margin-right: 0px; */
+  /* border: 2px solid purple; */
+}
+
+.tile-listener{
+  /* border: 2px solid yellow; */
+  z-index: 40;
+}
+
+/* PORT SECTION 0 PORT 1 & 2*/
+
+.port-overlay-row-0{
+  position: absolute;
+  display: flex;
+  width: 400px;
+  /* border: 3px solid orange; */
+}
+
+.port-0{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  position: relative;
+  top: -20px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid white; */
+  transform: rotate(0deg);
+}
+
+.port-0-image{
+  width: 70px;
+  height: 70px;
+}
+
+.port-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  position: relative;
+  top: -20px;
+  left: 160px;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid white; */
+  transform: rotate(0deg);
+}
+
+.port-1-image{
+  width: 70px;
+  height: 70px;
+}
+
+/* PORT SECTION 1 PORT 2 & 3*/
+
+.port-overlay-row-1{
+  position: absolute;
+  display: flex;
+  /* border: 3px solid orange; */
+  top: 140px;
+  width: 650px;
+  height: 160px;
+}
+
+.port-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  position: relative;
+  top: 100px;
+  left: -10px;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid white; */
+  transform: rotate(0deg);
+}
+
+.port-2-image{
+  width: 70px;
+  height: 70px;
+}
+
+.port-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  position: relative;
+  top: -30px;
+  left: 480px;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid white; */
+  transform: rotate(0deg);
+}
+
+.port-3-image{
+  width: 70px;
+  height: 70px;
+}
+
+
+/* PORT SECTION 2 PORT 4 & 5 & 6*/
+
+.port-overlay-row-2{
+  position: absolute;
+  display: flex;
+  /* border: 3px solid orange; */
+  top: 307px;
+  width: 800px;
+  height: 320px;
+}
+
+.port-4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  position: relative;
+  top: 150px;
+  left: 80px;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid white; */
+  transform: rotate(0deg);
+}
+
+.port-4-image{
+  width: 70px;
+  height: 70px;
+}
+
+.port-5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  position: relative;
+  top: 30px;
+  left: 680px;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid white; */
+  transform: rotate(0deg);
+}
+
+.port-5-image{
+  width: 70px;
+  height: 70px;
+}
+
+.port-6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  position: relative;
+  top: 250px;
+  left: 510px;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid white; */
+  transform: rotate(0deg);
+}
+
+.port-6-image{
+  width: 70px;
+  height: 70px;
+}
+
+
+/* PORT SECTION 3 PORT 7 & 8*/
+
+.port-overlay-row-3{
+  position: absolute;
+  display: flex;
+  /* border: 3px solid orange; */
+  top: 640px;
+  width:400px;
+  height: 100px;
+}
+
+.port-7{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  position: relative;
+  top: 40px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid white; */
+  transform: rotate(0deg);
+}
+
+.port-7-image{
+  width: 70px;
+  height: 70px;
+}
+
+.port-8{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 40;
+  position: relative;
+  top: 40px;
+  left: 170px;
+  width: 50px;
+  height: 50px;
+  /* border: 2px solid white; */
+  transform: rotate(0deg);
+}
+
+.port-8-image{
+  width: 70px;
+  height: 70px;
+}
+
+
+
+
+/* STRUCTURES */
+
+
+
+
+/* ROW 0 */
+
+
+.structure-overlay-row-0{
+  position: absolute;
+  display: flex;
+  width: 59%;
+  height: 5%;
+  margin-left: 5px;
+  top: 28px;
+}
+
+
+/* ROADS */
+
+.row-0-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  top: -5px;
+  left: 25px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-0-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  top: -6px;
+  left: 85px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-0-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: -6px;
+  left: 150px;
+  /* border-right: 10px solid rgb(255, 115, 0); */
+  transform: rotate(63deg);
+}
+
+.row-0-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: -6px;
+  left: 210px;
+  /* border-right: 10px solid rgb(255, 115, 0); */
+  transform: rotate(-63deg);
+}
+
+.row-0-road-4__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: -6px;
+  left: 277px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-0-road-5__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: -6px;
+  left: 337px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+
+/* STRUCTURES */
+
+
+/* NODE 29 */
+
+.row-0__node__29__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: -16px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-0__node__29__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: -16px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-0__node__29__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: -16px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+
+/* NODE 0 */
+
+.row-0__node__0__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: 45px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-0__node__0__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: 45px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-0__node__0__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: 45px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 1 */
+
+.row-0__node__1__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 110px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-0__node__1__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 110px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-0__node__1__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 110px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 2 */
+
+.row-0__node__2__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: 175px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-0__node__2__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: 175px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-0__node__2__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: 175px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 3 */
+
+.row-0__node__3__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 235px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-0__node__3__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 235px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-0__node__3__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 235px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 4 */
+
+.row-0__node__4__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: 295px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-0__node__4__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: 295px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-0__node__4__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: 295px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 5 */
+
+.row-0__node__5__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 357px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-0__node__5__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 357px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-0__node__5__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 357px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* ROW 1 */
+
+
+/* ROADS */
+.structure-overlay-row-1{
+  position: relative;
+  display: flex;
+  width: 61%;
+  height: 7.5%;
+  /* border: 3px solid blue; */
+  margin-left: 5px;
+  top: 69px;
+}
+
+.row-1-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 0;
+  left: 0;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-1-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 0;
+  left: 126.5px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-1-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 0;
+  left: 248px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-1-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 0;
+  left: 374px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.tile-0{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+}
+
+.tile-1{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 165px;
+}
+
+.tile-2{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 290px;
+}
+
+
+/* ROW 2 */
+
+
+.structure-overlay-row-2{
+  position: relative;
+  display: flex;
+  width: 81%;
+  height: 9.5%;
+  /* border: 2px solid red; */
+  margin-left: 5px;
+  top: 65px;
+}
+
+.row-2-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 30px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-2-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 15px;
+  left: 100px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-2-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 15px;
+  left: 159px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-2-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 15px;
+  left: 220px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-2-road-4__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 15px;
+  left: 280px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-2-road-5__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 15px;
+  left: 343px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-2-road-6__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 15px;
+  left: 404px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-2-road-7__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 27px;
+  left: 470px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+/* STRUCTURES */
+
+/* NODE 27 */
+
+.row-2__node__27__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: -5px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-2__node__27__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: -5px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-2__node__27__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: -5px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 28 */
+
+.row-2__node__28__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 56px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-2__node__28__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 56px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-2__node__28__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 56px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 47 */
+
+.row-2__node__47__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 118px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-2__node__47__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 118px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-2__node__47__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 56px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 30 */
+
+.row-2__node__30__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 180px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-2__node__30__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 180px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-2__node__30__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 180px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 31 */
+
+.row-2__node__31__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 240px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-2__node__31__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 240px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-2__node__31__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 240px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 32 */
+
+.row-2__node__32__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 302px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-2__node__32__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 302px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-2__node__32__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 302px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 33 */
+
+.row-2__node__33__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 363px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-2__node__33__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 363px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-2__node__33__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 363px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 6 */
+
+.row-2__node__6__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 425px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-2__node__6__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 425px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-2__node__6__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 425px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 7 */
+
+.row-2__node__7__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 490px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-2__node__7__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 490px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-2__node__7__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 490px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* ROW 3 */
+
+.structure-overlay-row-3{
+  position: relative;
+  display: flex;
+  width: 81%;
+  height: 8%;
+  /* border: 3px solid blue; */
+  margin-left: 5px;
+  top: 60px;
+}
+
+.row-3-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 12px;
+  left: 0px;
+  border-right: 10px solid rgb(255, 115, 0);
+}
+
+.row-3-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 12px;
+  left: 130px;
+  border-right: 10px solid rgb(255, 115, 0);
+}
+
+.row-3-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 12px;
+  left: 250px;
+  border-right: 10px solid rgb(255, 115, 0);
+}
+.row-3-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 12px;
+  left: 375px;
+  border-right: 10px solid rgb(255, 115, 0);
+}
+
+.row-3-road-4__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 12px;
+  left: 500px;
+  border-right: 10px solid rgb(255, 115, 0);
+}
+
+.tile-3{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 45px;
+  margin-top: 8px;
+}
+
+.tile-4{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 170px;
+  margin-top: 8px;
+}
+
+.tile-5{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 295px;
+  margin-top: 8px;
+}
+
+.tile-6{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 420px;
+  margin-top: 8px;
+}
+
+
+/* ROW 4 */
+
+.structure-overlay-row-4{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 9%;
+  /* border: 2px solid red; */
+  margin-left: 5px;
+  top: 59px;
+}
+
+.row-4-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 33px;
+  left: 32px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(64deg);
+}
+
+.row-4-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 20px;
+  left: 100px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-4-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 20px;
+  left: 159px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-4-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 20px;
+  left: 220px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-4-road-4__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 20px;
+  left: 280px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-4-road-5__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 20px;
+  left: 343px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-4-road-6__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 20px;
+  left: 404px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-4-road-7__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 20px;
+  left: 467px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-4-road-8__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 20px;top: 20px;
+  left: 527px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-4-road-9__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 33px;
+  left: 589px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+
+/* STRUCTURES ROW 4 */
+
+/* NODE 25 */
+
+.row-4__node__25__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 0px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__25__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 0px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__25__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 0px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 26 */
+
+.row-4__node__26__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 57px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__26__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 57px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__26__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 57px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* NODE 45 */
+
+.row-4__node__45__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 117px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__45__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 117px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__45__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 117px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  /* border-radius: 0px; */
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 46 */
+
+.row-4__node__46__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 178px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__46__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 178px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__46__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 178px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 53 */
+
+.row-4__node__53__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 240px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__53__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 240px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__53__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 240px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 48 */
+
+.row-4__node__48__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 303px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__48__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 303px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__48__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 303px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 49 */
+
+.row-4__node__49__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 363px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__49__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 363px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__49__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 363px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 34 */
+
+.row-4__node__34__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 425px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__34__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 425px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__34__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 425px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 35 */
+
+.row-4__node__35__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 485px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__35__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 485px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__35__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 46px;
+  left: 485px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 8 */
+
+.row-4__node__8__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 545px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__8__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 545px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__8__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 545px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 9 */
+
+.row-4__node__9__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 611px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-4__node__9__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 611px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-4__node__9__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 611px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* STRUCTURE ROW 5 */
+
+.structure-overlay-row-5{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 7%;
+  /* border: 3px solid blue; */
+  margin-left: 5px;
+  top: 57px;
+}
+
+.row-5-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 0;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-5-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 126.5px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-5-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 248px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-5-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 374px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-5-road-4__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 497px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-5-road-5__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 620px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.tile-7{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 45px;
+  margin-top: 8px;
+}
+
+.tile-8{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 170px;
+  margin-top: 8px;
+}
+
+.tile-9{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 290px;
+  margin-top: 8px;
+}
+
+.tile-10{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 410px;
+  margin-top: 8px;
+}
+
+.tile-11{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 530px;
+  margin-top: 8px;
+}
+
+
+/* ROW 6 */
+
+
+/* ROADS */
+
+.structure-overlay-row-6{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 9.5%;
+  /* border: 2px solid red; */
+  margin-left: 5px;
+  top: 55px;
+}
+
+.row-6-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 15px;
+  left: 33px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-6-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 33px;
+  left: 94px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-6-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 33px;
+  left: 159px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-6-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 33px;
+  left: 220px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-6-road-4__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 33px;
+  left: 282px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-6-road-5__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 33px;
+  left: 344px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-6-road-6__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 33px;
+  left: 406px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-6-road-7__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 33px;
+  left: 468px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-6-road-8__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 33px;
+  left: 530px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-6-road-9__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 18px;
+  left: 590px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+
+/* STRUCTURES */
+
+
+/* NODE 24 */
+
+.row-6__node__24__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 0px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__24__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 0px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__24__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 0px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 23 */
+
+.row-6__node__23__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 57px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__23__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 57px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__23__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 57px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 44 */
+
+.row-6__node__44__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 116px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__44__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 116px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__44__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 116px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 43 */
+
+.row-6__node__43__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 180px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__43__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 180px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__43__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 180px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 52 */
+
+.row-6__node__52__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 240px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__52__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 240px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__52__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 240px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 51 */
+
+.row-6__node__51__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 304px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__51__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 304px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__51__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 304px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 50 */
+
+.row-6__node__50__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 365px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__50__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 365px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__50__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 365px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* NODE 37 */
+
+.row-6__node__37__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 425px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__37__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 425px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__37__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 425px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 36 */
+
+.row-6__node__36__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 485px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__36__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 485px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__36__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 485px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 11 */
+
+.row-6__node__11__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 550px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__11__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 550px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__11__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 550px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 10 */
+
+.row-6__node__10__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 610px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-6__node__10__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 610px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-6__node__10__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 610px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* STRUCTURE ROW 7 */
+
+.structure-overlay-row-7{
+  position: relative;
+  display: flex;
+  width: 81%;
+  height: 8%;
+  /* border: 2px solid blue; */
+  margin-left: 5px;
+  top: 52px;
+}
+
+.row-7-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  top: 35px;
+  left: 0px;
+  border-right: 10px solid rgb(255, 115, 0);
+}
+
+.row-7-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  top: 35px;
+  left: 130px;
+  border-right: 10px solid rgb(255, 115, 0);
+}
+
+.row-7-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  top: 35px;
+  left: 250px;
+  border-right: 10px solid rgb(255, 115, 0);
+}
+.row-7-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  top: 35px;
+  left: 375px;
+  border-right: 10px solid rgb(255, 115, 0);
+}
+
+.row-7-road-4__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  top: 35px;
+  left: 500px;
+  border-right: 10px solid rgb(255, 115, 0);
+}
+
+.tile-12{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 45px;
+  margin-top: 20px;
+}
+
+.tile-13{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 170px;
+  margin-top: 20px;
+}
+
+.tile-14{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 295px;
+  margin-top: 20px;
+}
+
+.tile-15{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-left: 420px;
+  margin-top: 20px;
+}
+
+/* ROW 8 */
+
+
+/* ROADS ROW 8 */
+
+.structure-overlay-row-8{
+  position: relative;
+  display: flex;
+  width: 81%;
+  height: 9%;
+  /* border: 2px solid red; */
+  margin-left: 5px;
+  top: 50px;
+}
+
+.row-8-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 18px;
+  left: 33px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-8-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 95%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 35px;
+  left: 97px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-8-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 35px;
+  left: 159px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-8-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 35px;
+  left: 220px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-8-road-4__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 35px;
+  left: 282px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-8-road-5__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 35px;
+  left: 344px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-8-road-6__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 35px;
+  left: 406px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-8-road-7__placed{
+  position: absolute;
+  width: 0%;
+  height: 90%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 18px;
+  left: 470px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+
+/* STRUCTURES ROW 8 */
+
+
+/* NODE 22 */
+
+.row-8__node__22__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: -10px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-8__node__22__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: -10px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-8__node__22__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: -10px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 21 */
+
+.row-8__node__21__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 55px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-8__node__21__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 55px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-8__node__21__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 55px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 42 */
+
+.row-8__node__42__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 115px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-8__node__42__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 115px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-8__node__42__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 115px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* NODE 41 */
+
+.row-8__node__41__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 180px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-8__node__41__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 180px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-8__node__41__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 180px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 40 */
+
+.row-8__node__40__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 240px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-8__node__40__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 240px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-8__node__40__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 240px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 39 */
+
+.row-8__node__39__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 300px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-8__node__39__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 300px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-8__node__39__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 300px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 38 */
+
+.row-8__node__38__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 365px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-8__node__38__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 365px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-8__node__38__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 35px;
+  left: 365px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 13 */
+
+.row-8__node__13__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 430px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-8__node__13__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 430px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-8__node__13__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 60px;
+  left: 430px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 12 */
+
+.row-8__node__12__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 490px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-8__node__12__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 490px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-8__node__12__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  left: 490px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+
+/* STRUCTURE ROW 9 */
+
+.structure-overlay-row-9{
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 7%;
+  /* border: 2px solid blue; */
+  margin-left: 5px;
+  top: 595px;
+}
+
+.row-9-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 0;
+  left: 0;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-9-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 0;
+  left: 121px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-9-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 0;
+  left: 246px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.row-9-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 0;
+  left: 370px;
+  border-right: 10px solid rgb(255, 115, 0);
+  /* transform: rotate(90deg); */
+}
+
+.tile-16{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+}
+
+.tile-17{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 165px;
+}
+
+.tile-18{
+  /* border: 2px solid yellow; */
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 290px;
+}
+
+/* ROW 10 */
+
+
+/* ROADS ROW 10 */
+
+.structure-overlay-row-10{
+  position: relative;
+  display: flex;
+  width: 60%;
+  height: 5.5%;
+  /* border: 2px solid red; */
+  margin-left: 5px;
+  top: 105px;
+}
+
+.row-10-road-0__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 28px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-10-road-1__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 88px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-10-road-2__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 155px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-10-road-3__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 215px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+.row-10-road-4__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 282px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(-63deg);
+}
+
+.row-10-road-5__placed{
+  position: absolute;
+  width: 0%;
+  height: 150%;
+  /* margin-top: 0px;
+  margin-left: 55px; */
+  top: 25px;
+  left: 342px;
+  border-right: 10px solid rgb(255, 115, 0);
+  transform: rotate(63deg);
+}
+
+
+/* STRUCTURES ROW 10 */
+
+
+/* NODE 20 */
+
+.row-10__node__20__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: -10px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-10__node__20__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: -10px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-10__node__20__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: -10px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 19 */
+
+.row-10__node__19__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  left: 50px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-10__node__19__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  left: 50px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-10__node__19__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  left: 50px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 18 */
+
+.row-10__node__18__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 110px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-10__node__18__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 110px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-10__node__18__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 110px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 17 */
+
+.row-10__node__17__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  left: 175px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-10__node__17__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  left: 175px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-10__node__17__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  left: 175px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 16 */
+
+.row-10__node__16__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 235px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-10__node__16__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 235px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-10__node__16__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 235px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 15 */
+
+.row-10__node__15__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  left: 300px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-10__node__15__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  left: 300px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-10__node__15__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50px;
+  left: 300px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+/* NODE 14 */
+
+.row-10__node__14__{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 360px;
+  z-index: 100;
+  border: 1px solid;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.row-10__node__14__settlement{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 360px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  border-radius: 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.row-10__node__14__city{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  left: 360px;
+  border: 1px solid;
+  background-color: rgb(255, 115, 0);
+  z-index: 100;
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+.home-page__container{
+  width: 100%;
+  height: 100vh;
+}
+
+.home-page__body{
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/images/other/authentication_background_2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.home-page__header{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  background-image: linear-gradient(rgb(250, 235, 215, 0.1), rgb(250, 235, 215, 0.7)); 
+  border-bottom: 3px solid black;
+}
+
+.avatar-container{
+  display: flex;
+}
+
+.menu-button__container{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Yatra One', cursive;
+  font-weight: bold;
+  background-image: url("../../../public/images/other/scroll.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 60%;
+  width: 120px;
+}
+
+.avatar-image{
+  width: 80px;
+  height: 70px;
+  padding: 5px;
+  padding-bottom: 0;
+}
+
+.home-header__text{
+  font-family: 'Yatra One', cursive;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.home-header-text__container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.name-tag{
+  margin: 0;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.logout-button__home-page{
+  font-family: 'Yatra One', cursive;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.logout-button__home-page:hover{
+  color: rgb(82, 3, 3);
+}

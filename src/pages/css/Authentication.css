@@ -1,0 +1,74 @@
+.authentication-page__container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* padding-top: 80px; */
+}
+
+/* .background-image__container{
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/images/other/authentication_background_2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} */
+
+.background-image__container{
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/images/other/authentication_background_2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.authentication-page__header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.authentication-page__header h1{
+  margin-left: 150px;
+}
+
+.font-link{
+  font-family: 'Yatra One', cursive;
+  text-align: center;
+}
+
+.authentication-card__container{
+  display: flex;
+  justify-content: center;
+}
+
+.authentication-card-title{
+  font-family: 'Yatra One', cursive;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 240px;
+  animation: spinner 1s linear infinite;
+}
+
+.spinner-img{
+  height: 200px;
+}
+
+.page-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+}

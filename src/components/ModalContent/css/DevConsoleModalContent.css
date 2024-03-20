@@ -1,0 +1,82 @@
+.dev-console-modal-container{
+  /* border: 1px solid red; */
+  width: 600px;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dev-console-select{
+  width: 100px;
+}
+
+.delete-road-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.game-and-player-info-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.edit-resource-card-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.edit-dev-card-container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.edit-points-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.dev-console-submit-button-container button{
+  width: 156px;
+}
+
+.dev-console-form-container label{
+  margin-right: 5px;
+}
+
+.placeholder{
+  width: 100px;
+}
+
+.pre-game-modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  height: 40px;
+  /* border: 1px solid blue; */
+  padding: 0;
+  padding-top: 40px;
+}
+
+.pre-game-modal-actions button:hover{
+  background-color: rgb(71, 10, 2);
+}
+
+.pre-game-modal-actions button {
+  font: inherit;
+  font-family: 'Yatra One', cursive;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  background-color: #632828;
+  margin-left: 20px;
+  margin-right: 20px;
+}

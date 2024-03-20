@@ -1,0 +1,55 @@
+.control {
+  margin-bottom: 1rem;
+}
+
+.control label {
+  /* font-weight: bold; */
+  font-size: larger;
+  font-family: 'Yatra One', cursive;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.control input {
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 30%;
+}
+.actions button {
+  font: inherit;
+  font-family: 'Yatra One', cursive;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  /* padding: 0rem 2rem;  */
+  background-color: #632828;
+}
+
+.actions button:hover{
+  background-color: rgb(71, 10, 2);
+}
+
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-link{
+  color: blue;
+  text-decoration: underline;
+}
+
+.signup-link:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,145 @@
+.game-space-page{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../public/images/other/authentication_background_2.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+  /* border: 2px solid green; */
+}
+
+.board-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 800px;
+  height: 850px;
+  background-image: linear-gradient(rgb(70, 90, 134, 0.5), rgb(70, 90, 134, 1), rgb(70, 90, 134, 0.5));
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  /* border: 5px solid orange; */
+}
+
+.row-0{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  height: auto;
+  background-color: rgba(218, 202, 161);
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 120px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  clip-path: polygon(50% 0%, 65.5% 20%, 81.5% 0%, 98% 25%, 98% 100%, 2% 100%, 2% 25%, 18.5% 0%, 34% 20%);
+}
+
+.row-1{
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 60%;
+  background-color: rgba(218, 202, 161);
+  border-bottom: 1px solid rgba(218, 202, 161);
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
+  height: 120px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  clip-path: polygon(13% 0%, 87% 0%, 100% 25%, 100% 80%, 100% 100%, 0% 100%, 0% 80%, 0% 25%);
+}
+
+.row-2{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+  width: 75%;
+  height: 120px;
+  background-color: rgba(218, 202, 161);
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  height: 120px;
+  clip-path: polygon(9.5% 0%, 90.5% 0%, 100% 25%, 100% 80%, 90.5% 100%, 9.5% 100%, 0% 80%, 0% 25%);
+}
+
+.row-3{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  height: auto;
+  background-color: rgba(218, 202, 161);
+  padding-right: 20px;
+  padding-left: 20px;
+  /* padding-top: 10px; */
+  padding-bottom: 10px;
+  height: 120px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 100% 80%, 87% 100%, 13% 100%, 0% 80%, 0% 25%);
+}
+
+.row-4{
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  height: auto;
+  background-color: rgba(218, 202, 161);
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 120px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 10px;
+  clip-path: polygon(50% 0%, 65% 20%, 81% 0%, 98% 25%, 98% 100%, 2% 100%, 2% 25%, 20% 0%, 34% 20%);
+  clip-path: polygon(2% 0%, 98% 0%, 98% 75%, 81% 100%, 65% 80%, 50% 100%, 34% 80%, 18.5% 100%, 2% 75%);
+}
+
+.dev-form{
+  margin-top: 40px;
+}
+
+.player-ui-toggle-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99.7%;
+  /* height:100%; */
+  background-color: rgb(236, 225, 195);
+  border: 3px solid rgb(136, 115, 83);
+  font-family: 'Yatra One', cursive;
+  cursor: pointer;
+}
+
+.player-ui-toggle-bar h2{
+  margin: 10px
+}
+
+.player-info{
+  border: 2px solid black;
+  width: 30vw;
+  padding-left: 10px;
+}
+
+.current-turn{
+  display: flex;
+}
+
+.current-turn h4{
+  padding: 5px;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.current-turn span{
+  padding: 5px;
+  padding-top: 5px;
+}

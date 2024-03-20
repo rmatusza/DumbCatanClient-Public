@@ -1,0 +1,292 @@
+.player-ui-container__active{
+  width: 99.7%;
+  /* height:550px; */
+  /* height:100vh; */
+  /* height: 100%; */
+  background-color: rgb(236, 225, 195);
+  border: 3px solid rgb(136, 115, 83);
+  animation: slide-down 500ms;
+  display: flex;
+  overflow: hidden;
+}
+
+.player-ui-container__inactive{
+  width: 99.7%;
+  height:0px;
+  background-color: rgb(236, 225, 195);
+  border: 3px solid rgb(136, 115, 83);
+  animation: slide-up 500ms;
+  display: flex;
+  overflow: hidden;
+}
+
+.player-actions-and-updates{
+  border: 2px solid black;
+  width: 70vw;
+  max-height: 651px;
+  font-family: 'Yatra One';
+}
+
+.player-info table{
+  width: 200px;
+}
+
+.live-updates{
+  height: 200px;
+  border: 2px solid black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.live-updates_header{
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.live-updates_header button{
+  font: inherit;
+  font-family: 'Yatra One', cursive;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  width: 40%;
+  height: 40px;
+  background-color: #632828;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.live-updates_header button:hover{
+  background-color: rgb(71, 10, 2);
+}
+
+td {
+  width: 10px;
+  text-align: end;
+}
+
+.row-name{
+  text-align: start;
+}
+
+.active-knights{
+  font-style: italic;
+}
+
+.active-knights td{
+  padding-top: 15px;
+}
+
+.points{
+  display: flex;
+  justify-content: space-between;
+  width: 198px;
+}
+
+.color-banner{
+  padding: 0;
+  margin-left: -10px;
+  height: 15px;
+}
+
+.awards-section-title{
+  margin-bottom: 5px;
+}
+
+tbody p{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.turn-actions-ui{
+  height: 100%
+}
+
+.player-actions{
+  height: 77%;
+}
+
+.roll-results{
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.roll-results span{
+  margin-left: 10px;
+}
+
+.roll-results p{
+  margin: 0;
+  margin-left: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.your-resources{
+  margin-right: 30px;
+}
+
+.other-player-resources{
+  margin-right: 30px;
+}
+
+.other-player-resources p{
+  text-align: center;
+}
+
+.resources-gained-title{
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.resources-gained-container{
+  display: flex;
+  margin-top: 10px;
+}
+
+.brick-icon{
+  display: flex;
+  margin-left: 5px;
+}
+
+.brick-icon img{
+  width: 23px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.stone-icon{
+  display: flex;
+  margin-left: 5px;
+}
+
+.stone-icon img{
+  width: 23px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.hay-icon{
+  display: flex;
+  margin-left: 5px;
+}
+
+.hay-icon img{
+  width: 23px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.wood-icon{
+  display: flex;
+  margin-left: 5px;
+}
+
+.wood-icon img{
+  width: 25px;
+  height: 19px;
+  margin-right: 5px;
+}
+
+.sheep-icon{
+  display: flex;
+  margin-left: 5px;
+}
+
+.sheep-icon img{
+  width: 23px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.gained-resource-amount{
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.resources-gained-container p{
+  margin: 0;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.resources-gained-container ul{
+  margin: 0;
+}
+
+.active-phase{
+  color: rgb(0, 26, 255);
+}
+
+.turn-phases{
+  display: flex;
+  justify-content: center;
+}
+
+.turn-phases h3{
+  padding-right: 30px;
+  padding-left: 10px;
+  font-family: 'Yatra One';
+}
+
+.turn-phases h1{
+  padding: 0;
+  margin: 0;
+  margin-top: 14px;
+  padding-right: 20px;
+}
+
+.underline{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.underline div{
+  width: 90%;
+  border-bottom: 1px solid black;
+}
+
+.turn-actions-ui{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 74%;
+}
+
+.turn-actions-ui h2{
+  font-family: 'Yatra One', cursive;
+  color: red;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 1;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    height: 661px;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 1;
+    height: 661px;
+
+  }
+  to {
+    opacity: 1;
+    height: 0px;
+  }
+}

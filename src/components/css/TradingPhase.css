@@ -1,0 +1,7 @@
+.player-instructions_trading-phase{
+  display: flex;
+  color: red;
+  /* border: 1px solid blue; */
+  height: 100%;
+  align-items: flex-end;
+}

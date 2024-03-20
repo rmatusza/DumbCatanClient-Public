@@ -1,0 +1,72 @@
+.confirmation-modal-content-container{
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  font-family: 'Yatra One', cursive;
+}
+
+.confirmation-title{
+  /* border: 1px solid orange; */
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.confirmation-error-message{
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 30%;
+  width: 85%;
+  color: red;
+}
+
+.confirmation-error-message h3{
+  margin: 0;
+  padding: 0;
+}
+
+.confirmation-actions{
+  /* border: 1px solid green; */
+  width: 85%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.confirmation-extra-content{
+  display: flex;
+  width: 100%;
+  height: 25%;
+  justify-content: center;
+}
+
+.confirmation-extra-content h3{
+  margin: 0;
+  padding: 0;
+}
+
+.confirmation-actions button{
+  font: inherit;
+  font-family: 'Yatra One', cursive;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  height: 35%;
+  background-color: #632828;
+  margin-top: 15px;
+  margin-left: 15px; 
+  margin-right: 15px; 
+}
+
+.confirmation-actions button:hover{
+  background-color: rgb(71, 10, 2);
+}

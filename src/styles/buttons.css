@@ -1,0 +1,12 @@
+.eminem-button{
+  border-radius: 25px;
+  padding: 0.5rem 1rem;   
+  font-family: 'Yatra One', cursive;
+  font-weight: bold;
+  background-color: antiquewhite;  
+}
+
+.eminem-button:hover{
+  cursor: pointer;
+  background-color: aliceblue;
+}

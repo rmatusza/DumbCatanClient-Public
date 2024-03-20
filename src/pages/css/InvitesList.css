@@ -1,0 +1,118 @@
+#invites-info-messages_container{
+  background-color: rgba(255, 254, 254, 0.8);
+  margin-top: 100px;
+  width: 50%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'Yatra One';
+  color: rgb(0, 0, 0);
+}
+
+.game-invite-options{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.game-invite-options button{
+  font: inherit;
+  font-family: 'Yatra One', cursive;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width:40%;
+  background-color: #632828;
+}
+
+.game-invite-options button:hover{
+  background-color: rgb(71, 10, 2);
+}
+
+.invites-color-selection{
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+  width: 94%;
+}
+
+.invites-color-selection .invite-color{
+  margin: 5px;
+  margin-bottom: 0;
+}
+
+.color-selection-message__invites-list{
+  display: flex;
+  justify-content: center;
+  font-family: 'Yatra One';
+  border-top: 2px solid black;
+  margin-bottom: 5px;
+  width: 94%;
+}
+
+.color-selection-message__invites-list h3{
+  margin: 0;
+  padding: 0;
+}
+
+.selected{
+  border: 3px solid rgb(95, 151, 255);
+  border-radius: 20px;
+}
+
+.unavailable {
+  display: none;
+}
+
+.no-invites-message{
+  background-color: rgba(255, 254, 254, 0.8);
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.loading-message-invites-list{
+  background-color: rgba(255, 254, 254, 0.8);
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.invite-cards-container{
+  justify-content: space-around;
+  display: flex;
+  padding: 75px;
+}
+
+.no-invites-message h2{
+  font-family: 'Yatra One';
+  color: rgb(0, 0, 0);
+}
+
+.orange {
+  background-color: rgb(255, 115, 0);;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.white {
+  background-color: white;
+}

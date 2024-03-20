@@ -1,0 +1,84 @@
+.report-bug_page-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../../../public/images/other/authentication_background_2.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+}
+
+#bug-form{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(253, 253, 253, .9);
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 75%;
+    min-height: 50%;
+    font-family: 'Yatra One', cursive;
+}
+
+.report-bug_input-block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.report-bug_input-block input{
+    width: 50%
+}
+
+.report-bug_input-block textarea{
+    width: 50%
+}
+
+#description_block{
+    height: 150%
+}
+
+#steps_block{
+    height: 100%
+}
+
+textarea{
+    resize: none;
+}
+
+#bug-form_actions{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#bug-form_actions button{
+    font: inherit;
+    font-family: 'Yatra One', cursive;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    background-color: #632828;
+    margin-top: 15px;
+    margin-left: 15px; 
+    margin-right: 15px; 
+    padding: 10px;
+}
+  
+#bug-form_actions button:hover{
+    background-color: rgb(71, 10, 2);
+}
+
+input{
+    overflow-y: scroll;
+}

@@ -1,0 +1,44 @@
+.building-phase-container{
+  width: 100%;
+  height: 98%;
+}
+
+.building-phase-actions{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pass-action{
+  /* border: 1px solid red; */
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.cancel-road-placement-button{
+  border: 1px solid green;
+  margin-left: 10px;
+}
+
+.finish-turn-button__not-allowed:hover{
+  cursor: not-allowed;
+  background-color: #632828;
+}
+
+.player-instructions{
+  display: flex;
+  justify-content: center;
+}
+
+.main-actions{
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+

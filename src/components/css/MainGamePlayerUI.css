@@ -1,0 +1,208 @@
+.main-game-ui-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.main-game-ui-container__dice-roll-step{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main-game-ui-container__dice-roll-step button{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 150px;
+  min-height: 40px;
+  font-family: 'Yatra One';
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #632828;
+}
+
+.main-game-ui-container button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 150px;
+  min-height: 40px;
+  font-family: 'Yatra One';
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #632828;
+}
+
+
+.main-game-ui-container button:hover {
+  background-color: rgb(71, 10, 2);
+}
+
+.dice-result {
+  min-height: 45px;
+  margin-top: 20px;
+}
+
+.main-game-ui-container h1 {
+  font-family: 'Yatra One';
+}
+
+.trade-phase-actions {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid red; */
+}
+
+.trade-phase-actions button {
+  margin: 10px 20px;
+}
+
+.trade-phase-actions__active {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.trade-phase-actions__active button {
+  margin: 30px 40px;
+}
+
+.spinner-container__main-game{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  height: 95px;
+  margin-top: 10px;
+  animation: spinner 1s linear infinite;
+}
+
+.spinner-img__main-game{
+  height: 110px;
+  margin-bottom: 10px;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.player-trade-select{
+  display: flex;
+  margin-top: 5px;
+}
+
+.player-trade-select p{
+  margin: 0;
+  margin-right: 10px;
+}
+
+.player-trade-select select{
+  min-width: 150px;
+  text-align: center;
+}
+
+.resource-trade-options{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+}
+
+.resource-trade-options__selection{
+  text-align: center;
+  width: 50%;
+  height: 244px;
+}
+
+.resource-trade-options__selection h3{
+  text-decoration: underline;
+}
+
+.resource-trade-options_separator{
+  height: 100%;
+  width: 0;
+  border: 1px solid black
+}
+
+.offering-selections{
+  display: flex;
+  justify-content: center;
+}
+
+.offering-selections img{
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.hay-card{
+  width: 60px;
+  height: 70px;
+}
+
+.trade-counts{
+  display: flex;
+  justify-content: center;
+}
+
+.trade-count{
+  text-align: center;
+  width: 60px;
+  margin: 5px;
+}
+
+.trade-count p{
+  margin-bottom: 0;
+}
+
+#reduce-resource-amount-button{
+  background-color: transparent;
+  color: black;
+  width: auto;
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+.dev-card-selection-container{
+  display: flex;
+}
+
+.dev-card-selection-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.dev-card-selection-container__divider{
+  width: 50%;
+  border: 1px solid black;
+}
+
+.dev-card-selection-container button{
+  margin: 10px 5px;
+}
+
+.dev-card-selection-container__divider{
+  margin-top: 20px
+}

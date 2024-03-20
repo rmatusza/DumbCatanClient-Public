@@ -1,0 +1,33 @@
+.pre-game-ui-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.pre-game-ui-container button{
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  font-family: 'Yatra One';
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #632828;
+}
+
+.pre-game-ui-container button:hover{
+  background-color: rgb(71, 10, 2);
+}
+
+.game-not-started-message{
+  font-family: 'Yatra One';
+  color: red;
+}
+
+.pre-game-ui-error-message{
+  text-align: center;
+}

@@ -1,0 +1,83 @@
+.card {
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: rgb(253, 253, 253);
+}
+
+.game-card{
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: rgb(252, 243, 217);
+  width: 300px;
+  height: 360px;
+  
+}
+
+.game-card:hover{
+  background-color: rgb(252, 248, 238);
+  cursor: pointer;
+}
+
+.game-invite-card{
+  padding: 1rem;
+  margin: 20px;
+  /* margin-left: 30px;   */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: rgb(252, 243, 217);
+  width: 300px;
+  min-height: 400px;
+}
+
+.xs-card {
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: rgb(253, 253, 253);
+  width: 50%
+}
+
+.small-card {
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: rgb(253, 253, 253);
+  width: 70%;
+}
+
+.medium-card {
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: rgb(253, 253, 253);
+  width: 80%;
+}
+
+.authentication-card {
+  margin-top: 50px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: rgba(253, 253, 253, .9);
+  width: 60%;
+}
+
+@media (min-width: 1065px){
+  .authentication-card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1250px){
+  .authentication-card {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1570px){
+  .authentication-card {
+    width: 30%;
+  }
+}
